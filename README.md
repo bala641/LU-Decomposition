@@ -8,145 +8,41 @@ To write a program to find the LU Decomposition of a matrix.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Initialize:
+# Program 1
+### step 1:
+Input matrix A (coefficients) and vector b (constants).
 
-𝐿
-L as an 
-𝑛
-×
-𝑛
-n×n identity matrix (1's on the diagonal, 0 elsewhere).
+### step 2:
+Perform LU decomposition of matrix A to get combined LU matrix and pivot array.
 
-𝑈
-U as an 
-𝑛
-×
-𝑛
-n×n zero matrix.
+### step 3:
+Use the LU factors to solve the linear system AX = b.
+
+### step 4:
+Compute the solution vector X.
+
+### step 5:
+Output the result X.
+
+# Program 2:
+
+### step 1:
+Input matrix A.
+
+### step 2:
+Perform LU decomposition using scipy.linalg.lu() to obtain matrices P, L, and U.
+
+### step 3:
+Extract the lower triangular matrix L.
+
+### step 4:
+Extract the upper triangular matrix U.
+
+### step 5:
+Print matrices L and U.
 
 
-2.To find 
-𝐿
-[
-𝑖
-]
-[
-𝑗
-]
-L[i][j]:
 
-𝐿
-[
-𝑖
-]
-[
-𝑗
-]
-=
-𝐴
-[
-𝑖
-]
-[
-𝑗
-]
-−
-(
-𝑡
-ℎ
-𝑖
-𝑛
-𝑔
-𝑠
-𝑎
-𝑙
-𝑟
-𝑒
-𝑎
-𝑑
-𝑦
-𝑓
-𝑖
-𝑙
-𝑙
-𝑒
-𝑑
-𝑏
-𝑒
-𝑓
-𝑜
-𝑟
-𝑒
-)
-L[i][j]=A[i][j]−(thingsalreadyfilledbefore)
-To find 
-𝑈
-[
-𝑗
-]
-[
-𝑖
-]
-U[j][i] (if 
-𝑖
->
-𝑗
-i>j):
-
-𝑈
-[
-𝑗
-]
-[
-𝑖
-]
-=
-𝐴
-[
-𝑗
-]
-[
-𝑖
-]
-−
-(
-𝑡
-ℎ
-𝑖
-𝑛
-𝑔
-𝑠
-𝑎
-𝑙
-𝑟
-𝑒
-𝑎
-𝑑
-𝑦
-𝑓
-𝑖
-𝑙
-𝑙
-𝑒
-𝑑
-𝑏
-𝑒
-𝑓
-𝑜
-𝑟
-𝑒
-)
-𝐿
-[
-𝑗
-]
-[
-𝑗
-]
-U[j][i]= 
-L[j][j]
-A[j][i]−(thingsalreadyfilledbefore)
-​
 ## Program:
 (i) To find the L and U matrix
 
